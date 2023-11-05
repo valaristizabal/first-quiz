@@ -1,6 +1,8 @@
 import pets_db as pets_db
 from question5 import sql_create_favorite_foods, sql_alter_tables_with_favorite_food, sql_select_all_vegetarian_pets
 
+
+
 FOODS = [
   (1, "spinach", 1),
   (2, "termites", 0),

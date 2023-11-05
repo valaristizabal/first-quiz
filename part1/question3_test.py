@@ -1,19 +1,22 @@
+from question3 import make_oven,alchemy_combine 
+
+
 def test_alchemy_combine():
 
   assert alchemy_combine(
     make_oven(),
     ["lead", "mercury"],
     5000
-  ) == "gold"
+  ) ==  ['Hervirlead', 'Hervirmercury']
 
   assert alchemy_combine(
     make_oven(),
     ["water", "air"],
     -100
-  ) == "snow"
+  ) == ['Congelarwater', 'Congelarair']
 
   assert alchemy_combine(
     make_oven(),
     ["cheese", "dough", "tomato"],
     150
-  ) == "pizza"
+  ) == ['Hervircheese', 'Hervirdough', 'Hervirtomato']
